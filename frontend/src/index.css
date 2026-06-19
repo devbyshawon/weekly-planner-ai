@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+/*
+  Design identity — Weekly Planner AI
+  ------------------------------------
+  Subject: a personal discipline system blending Islamic prayer times,
+  academic/thesis work, fitness, and freelancing into one schedule.
+  The weekly grid itself is the product's "hero" — there's no separate
+  marketing page, so these tokens drive the actual planner UI.
+
+  Palette avoids the generic AI-app defaults (cream+terracotta+serif,
+  near-black+neon, broadsheet-newspaper). Instead: a deep teal-charcoal
+  base (calm, focused — study-lamp-at-night feel), warm sand surfaces,
+  and a muted gold accent that nods to both achievement and Islamic
+  geometric ornament, used sparingly as the signature element on
+  prayer-category cards.
+*/
+@theme {
+  /* Core palette */
+  --color-ink: #11201c;       /* deep teal-charcoal — app background */
+  --color-ink-soft: #1a2e28;  /* raised surfaces on dark background */
+  --color-sand: #f4efe2;      /* warm light surface */
+  --color-sand-dim: #e8e1d1;  /* light-mode secondary surface */
+  --color-gold: #c99a3c;      /* primary accent — prayer / achievement */
+  --color-slate: #3d5a6c;     /* secondary accent — study / focus */
+  --color-sage: #6b8f71;      /* tertiary accent — gym / personal growth */
+  --color-clay: #b5533c;      /* alerts, conflicts, freelance urgency */
+  --color-ink-faint: #5c6f69; /* muted text on dark background */
+
+  /* Category color mapping (used directly in components) */
+  --color-cat-prayer: var(--color-gold);
+  --color-cat-study: var(--color-slate);
+  --color-cat-gym: var(--color-sage);
+  --color-cat-freelance: var(--color-clay);
+  --color-cat-personal: #8a7ca8;
+  --color-cat-work: #4a7a8c;
+  --color-cat-other: #8a8a8a;
+
+  /* Typography */
+  --font-display: "Space Grotesk", "Inter", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", "Menlo", monospace; /* used for all time labels */
+}
+
+html {
+  font-family: var(--font-body);
+}

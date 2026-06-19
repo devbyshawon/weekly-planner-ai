@@ -1,0 +1,12 @@
+{
+  "name": "Weekly Planner AI",
+  "short_name": "Planner",
+  "description": "AI-powered weekly schedule — add events by typing natural-language prompts",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#11201c",
+  "theme_color": "#c99a3c",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
