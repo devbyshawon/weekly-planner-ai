@@ -17,7 +17,7 @@ git init
 git add .
 git commit -m "feat: initial release — AI weekly planner"
 git remote add origin https://github.com/<your-username>/weekly-planner-ai.git
-git push -u origin main
+git push -u origin master
 ```
 
 ---
