@@ -43,7 +43,7 @@ export default function DailyAgenda({ selectedDay, occurrences, onEventClick, on
         <p className="text-ink-faint text-sm text-center py-6">Nothing scheduled for this day.</p>
       )}
 
-      <div ref={scrollRef} className="overflow-y-auto" style={{ maxHeight: "560px" }}>
+      <div ref={scrollRef} data-export-scroll className="overflow-y-auto" style={{ maxHeight: "560px" }}>
         <div className="grid grid-cols-[52px_1fr] relative" style={{ height: `${24 * PX_PER_HOUR}px` }}>
           <div className="relative">
             {HOURS.map((h) => (

@@ -68,7 +68,7 @@ const WeeklyGrid = forwardRef(function WeeklyGrid({ weekStart, occurrences, onEv
       </div>
 
       {/* Scrollable time grid */}
-      <div ref={scrollRef} className="overflow-y-auto" style={{ maxHeight: "560px" }}>
+      <div ref={scrollRef} data-export-scroll className="overflow-y-auto" style={{ maxHeight: "560px" }}>
         <div className="grid grid-cols-[44px_repeat(7,1fr)] relative" style={{ height: `${24 * PX_PER_HOUR}px` }}>
           <div className="relative">
             {HOURS.map((h) => (

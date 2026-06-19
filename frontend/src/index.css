@@ -45,3 +45,11 @@
 html {
   font-family: var(--font-body);
 }
+
+/* Light theme overrides — applied when <html data-theme="light"> */
+[data-theme="light"] {
+  --color-ink: #f7f4ec;        /* light background, replaces dark teal-charcoal */
+  --color-ink-soft: #ffffff;   /* raised surfaces become white cards */
+  --color-sand: #1a2e28;       /* primary text becomes dark on light bg */
+  --color-ink-faint: #8a8578;  /* muted text, still readable on light bg */
+}
